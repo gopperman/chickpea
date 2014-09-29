@@ -77,9 +77,9 @@
 			<div id="salads">
 				<h2>Salads</h2>
 				<div class="description">
-					<p>Available as a side, entree, or wrap. Entree served with grilled garlic bread. Wraps are available in spinach, tomato, or original, served with chips and a pickle spear.</p>
+					<p>Available as a side, entree, or wrap. Entree served with grilled garlic bread. Wraps are available in spinach, tomato, or original, served with chips and a pickle spear</p>
 				</div>								
-			</div>
+				<div class="container-fluid">
 				<div class="col-sm-6 col-md-4">
 					<h3>Side Salad</h3>
 					<p>Mixed greens drizzled in our perfecto dressing with salt and pepper.</p>
@@ -99,6 +99,7 @@
 				<div class="col-sm-6 col-md-4">
 					<h3>Avocado Salad</h3>
 					<p>Mixed greens, tomato, and cucumber, drizzled in our creamy avocado dressing</p>
+				</div>
 				</div>
 			</div>
 			<div id="cheese">
