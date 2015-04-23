@@ -143,7 +143,7 @@
 			</div>
 			<div class="col-xs-6 col-sm-12">
 				<h2>Hours</h2>
- 				<p><time itemprop="openingHours" datetime="Mo,Tu,We,Th,Fri 15:00-19:00">Open Monday - Friday<br />3 - 7PM</time></p>
+ 				<p><time itemprop="openingHours" datetime="Mo,Tu,We,Th,Fri 15:00-19:00">Opening Soon<br /></time></p>
 			</div>
 		</div>
 		<div class="col-sm-8 col-md-9">
