@@ -13,7 +13,7 @@
 		<div class="container-fluid">
 			<h2>About Chickpea</h2>
 			<p>At Chickpea, we are building on the movement of socially-responsible businesses by donating all of our profits to animal advocacy. All of our food is 100% vegan.</p>
-			<p>Currently located inside Spiritual Haze, we will be moving to a new and improved location in Winter 2014/15. Our vision for the future is a restaurant where diverse peoples can come together to share food, support animal rights, host workshops and lectures, and more. We will also be expanding our menu and hope to obtain as much of our ingredients as possible from local sources.</p>
+			<p>We will be moving to a new and improved location in Spring 2015. Our vision for the future is a restaurant where diverse peoples can come together to share food, support animal rights, host workshops and lectures, and more. We will also be expanding our menu and hope to obtain as much of our ingredients as possible from local sources.</p>
 		</div>
 	</div>
 	<div id="menu">
@@ -137,8 +137,7 @@
 			<div class="col-xs-6 col-sm-12">
 			<h2>Location</h2>
         <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><p>
-          <small>Spiritual Haze</small><br />
-          <span itemprop="streetAddress">482 Park Avenue</span><br /> 
+          <span itemprop="streetAddress">589b Park Ave</span><br /> 
           <span itemprop="addressLocality">Worcester</span>, <span itemprop="addressRegion">MA</span>
         </p></div>
 			</div>
