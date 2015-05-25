@@ -5,7 +5,6 @@
 			<img src="/app/themes/chickpea/assets/img/chick.png" alt="A baby chick" />
 		</div>
 		<div class="col-sm-6 col-md-4 col-md-pull-4">
-			<time>Opening Soon</time><br />
 			589b Park Ave<br />
     	Worcester, Massachusetts
 		</div>

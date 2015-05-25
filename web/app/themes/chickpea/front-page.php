@@ -13,7 +13,7 @@
 		<div class="container-fluid">
 			<h2>About Chickpea</h2>
 			<p>At Chickpea, we are building on the movement of socially-responsible businesses by donating all of our profits to animal advocacy. All of our food is 100% vegan.</p>
-			<p>We will be moving to a new and improved location in Spring 2015. Our vision for the future is a restaurant where diverse peoples can come together to share food, support animal rights, host workshops and lectures, and more. We will also be expanding our menu and hope to obtain as much of our ingredients as possible from local sources.</p>
+			<p>Our vision for the future is a restaurant where diverse peoples can come together to share food, support animal rights, host workshops and lectures, and more. We will also be expanding our menu and hope to obtain as much of our ingredients as possible from local sources.</p>
 		</div>
 	</div>
 	<div id="menu">
@@ -143,7 +143,10 @@
 			</div>
 			<div class="col-xs-6 col-sm-12">
 				<h2>Hours</h2>
- 				<p><time itemprop="openingHours" datetime="Mo,Tu,We,Th,Fri 15:00-19:00">Opening Soon<br /></time></p>
+ 				<p><time itemprop="openingHours" datetime="Mo Closed">Monday: Closed<br /></time>
+ 					<time itemprop="openingHours" datetime="Tu,We 15:00-01:00">Tue-Wed: 3pm - 1am<br /></time>
+ 					<time itemprop="openingHours" datetime="Th,Fr,Sa 15:00-02:00">Thu-Sat: 3pm - 2am<br /></time>
+ 					<time itemprop="openingHours" datetime="Su 11:00-02:00">Sunday: 11am - 2am<br /></time></p>
 			</div>
 		</div>
 		<div class="col-sm-8 col-md-9">
