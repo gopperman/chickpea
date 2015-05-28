@@ -1,4 +1,5 @@
-<?php get_template_part('templates/head'); ?>
+<?php $options = get_option('chickpea_theme_options');
+get_template_part('templates/head'); ?>
 <body <?php body_class(); ?>>
 
   <!--[if lt IE 8]>

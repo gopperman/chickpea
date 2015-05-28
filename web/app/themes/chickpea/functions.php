@@ -18,6 +18,7 @@ $roots_includes = array(
   '/lib/widgets.php',         // Sidebars and widgets
   '/lib/scripts.php',         // Scripts and stylesheets
   '/lib/custom.php',          // Custom functions
+	'/lib/theme-options.php'		// Theme options
 );
 
 foreach($roots_includes as $file){

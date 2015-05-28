@@ -3,17 +3,25 @@
 	<div id="hero">
 		<img itemprop="logo" src="/app/themes/chickpea/assets/img/logo.png" />
 		<div class="social">
-			<span>Follow us:</span> 
-      <a target="_blank" href="https://www.facebook.com/chickpeaworcester"><i class="fa fa-facebook"></i></a>
-      <a target="_blank" href="https://twitter.com/Chickpea508"><i class="fa fa-twitter"></i></a>
-      <a target="_blank" href="http://instagram.com/chickpeaworcester"><i class="fa fa-instagram"></i></a>
+			<span>Follow us:</span>
+        <?php if (array_key_exists('facebook', $options)) {?>
+            <a target="_blank" href="https://www.facebook.com/<?=$options['facebook'];?>">
+            <i class="fa fa-facebook"></i></a>
+        <?php } ?>
+        <?php if (array_key_exists('twitter', $options)) {?>
+            <a target="_blank" href="https://www.twitter.com/<?=$options['twitter'];?>">
+            <i class="fa fa-twitter"></i></a>
+        <?php } ?>
+        <?php if (array_key_exists('instagram', $options)) {?>
+            <a target="_blank" href="https://www.instagram.com/<?=$options['instagram'];?>">
+            <i class="fa fa-instagram"></i></a>
+        <?php } ?>
     </div>
 	</div>
 	<div id="about">
 		<div class="container-fluid">
 			<h2>About Chickpea</h2>
-			<p>At Chickpea, we are building on the movement of socially-responsible businesses by donating all of our profits to animal advocacy. All of our food is 100% vegan.</p>
-			<p>Our vision for the future is a restaurant where diverse peoples can come together to share food, support animal rights, host workshops and lectures, and more. We will also be expanding our menu and hope to obtain as much of our ingredients as possible from local sources.</p>
+			<?= get_field('about'); ?>
 		</div>
 	</div>
 	<div id="menu">
@@ -137,8 +145,8 @@
 			<div class="col-xs-6 col-sm-12">
 			<h2>Location</h2>
         <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><p>
-          <span itemprop="streetAddress">589b Park Ave</span><br /> 
-          <span itemprop="addressLocality">Worcester</span>, <span itemprop="addressRegion">MA</span>
+          <span itemprop="streetAddress"><?=$options['street'];?></span><br /> 
+          <span itemprop="addressLocality"><?=$options['city'];?></span>, <span itemprop="addressRegion"><?=$options['state'];?></span> <?=$options['postcode'];?>
         </p></div>
 			</div>
 			<div class="col-xs-6 col-sm-12">
@@ -150,11 +158,13 @@
 			</div>
 		</div>
 		<div class="col-sm-8 col-md-9">
-			<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
-			<div style="overflow:hidden;height:360px;width:100%;"><div id="gmap_canvas" style="height:360px;width:100%;"></div>
-			<style>#gmap_canvas img{max-width:none!important;background:none!important}</style>
-			<a class="google-map-code" href="http://www.mapsembed.com" id="get-map-data">www.mapsembed.com</a></div>
-			<script type="text/javascript"> function init_map(){var myOptions = {zoom:15,center:new google.maps.LatLng(42.2537087,-71.82693940000001),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(42.2537087, -71.82693940000001)});infowindow = new google.maps.InfoWindow({content:"<b>Chickpea</b><br/>482 Park Avenue<br/> Worcester, ma" });google.maps.event.addListener(marker, "click", function(){infowindow.open(map,marker);});}google.maps.event.addDomListener(window, 'load', init_map);</script>
+			<?php if (array_key_exists('longitude', $options) && array_key_exists('latitude', $options)) { ?>
+				<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+				<div style="overflow:hidden;height:360px;width:100%;"><div id="gmap_canvas" style="height:360px;width:100%;"></div>
+				<style>#gmap_canvas img{max-width:none!important;background:none!important}</style>
+				<a class="google-map-code" href="http://www.mapsembed.com" id="get-map-data">www.mapsembed.com</a></div>
+				<script type="text/javascript"> function init_map(){var myOptions = {zoom:15,center:new google.maps.LatLng(<?=$options['latitude']; ?>,<?=$options['longitude']; ?>),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(<?=$options['latitude'];?>, <?=$options['longitude'];?>)});infowindow = new google.maps.InfoWindow({content:"<b>Chickpea</b><br/>482 Park Avenue<br/> Worcester, ma" });google.maps.event.addListener(marker, "click", function(){infowindow.open(map,marker);});}google.maps.event.addDomListener(window, 'load', init_map);</script>
+			<?php } ?>
 		</div>
 	</div>
 </div>
